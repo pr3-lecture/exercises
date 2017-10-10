@@ -36,7 +36,7 @@ pushd ../../PR3_Repos
 rsync --exclude=*-solution -a --delete ../PR3/11_Labs/ __template
 
 # Loop repos and push changes
-for REPO in {1..40}
+for REPO in {41..41}
 do
     if [ "$REPO" -lt "10" ]
 	then

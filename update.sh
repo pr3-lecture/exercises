@@ -19,7 +19,7 @@ function update {
     cd ..
 
 #    rsync --exclude=.git --delete --update -raz __template/koans/ $REPO_NAME/koans
-    rsync --exclude=.git --delete --update -raz __template/koans/ $REPO_NAME/koans
+    rsync --exclude=.git --delete --update -raz __template/crypter/ $REPO_NAME/crypter
 
     cp __template/readme.md $REPO_NAME
     cp __template/.gitignore $REPO_NAME

@@ -18,6 +18,7 @@ function update {
     git pull origin master
     cd ..
 
+#    rsync --exclude=.git --delete --update -raz __template/koans/ $REPO_NAME/koans
     rsync --exclude=.git --delete --update -raz __template/koans/ $REPO_NAME/koans
 
     cp __template/readme.md $REPO_NAME
@@ -36,7 +37,7 @@ pushd ../../PR3_Repos
 rsync --exclude=*-solution -a --delete ../PR3/11_Labs/ __template
 
 # Loop repos and push changes
-for REPO in {42..53}
+for REPO in {53..53}
 do
     if [ "$REPO" -lt "10" ]
 	then
